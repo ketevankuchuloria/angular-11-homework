@@ -1,23 +1,36 @@
 <!-- <app-first [tasks]= "parentTask"></app-first>  ჩაწოდება -->
-<app-first [tasks]= "parentTask"(delete)= "deleteHandler($event)"></app-first>
+<!-- <app-first [tasks]= "parentTask"(delete)= "deleteHandler($event)"></app-first>
 <app-second></app-second>
 
-<button (click)="checkTasks()">checkTasks</button>
+<button (click)="checkTasks()">checkTasks</button> -->
 
 
+<!-- --------------------------------------------------------------------- -->
 
-
-<button (click) = "setloading()">Load Data</button>
+<!-- <button (click) = "setloading()">Load Data</button> -->
 
 <!-- <div *ngIf = "loading">
     Loading...
 </div> -->
 
-<ng-template #loading>
+<!-- <ng-template #loading> 
     <div>Loading...</div>
-</ng-template>
+</ng-template> -->
 
 
-<div *ngIf = "!isloading; else loading">
+<!-- <div *ngIf = "!isloading; else loading">
     Data Is Loaded
-</div>
+</div> -->
+
+<input type="text" name="" id="">
+<ng-container *ngTemplateOutlet="loading"></ng-container>
+<input type="text" name="" id="">
+<ng-container *ngTemplateOutlet="loading"></ng-container>
+<input type="text" name="" id="">
+<ng-container *ngTemplateOutlet="loading"></ng-container>
+<input type="text" name="" id="">
+<ng-container *ngTemplateOutlet="loading"></ng-container>
+
+<ng-template #loading>
+    <div style="color: red;">*</div>
+</ng-template>
