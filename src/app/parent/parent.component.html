@@ -22,7 +22,9 @@
     Data Is Loaded
 </div> -->
 
-<input type="text" name="" id="">
+<!-- template injection in container -->
+
+<!-- <input type="text" name="" id="">
 <ng-container *ngTemplateOutlet="loading"></ng-container>
 <input type="text" name="" id="">
 <ng-container *ngTemplateOutlet="loading"></ng-container>
@@ -33,4 +35,11 @@
 
 <ng-template #loading>
     <div style="color: red;">*</div>
-</ng-template>
+</ng-template> -->
+
+
+<!-- custom directives -->
+
+<div class="hey" appTesting [bgColor] = "'blue' ">
+    hey
+</div>

@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FirstComponent, ParentComponent, SecondComponent } from './parent';
+import { TestingDirective } from './parent/testing.directive';
 
 
 
@@ -14,7 +15,8 @@ import { FirstComponent, ParentComponent, SecondComponent } from './parent';
     AppComponent,
       ParentComponent,
       FirstComponent,
-      SecondComponent
+      SecondComponent,
+      TestingDirective,
    ],
   imports: [
     BrowserModule,
