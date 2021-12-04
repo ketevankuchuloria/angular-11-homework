@@ -35,6 +35,9 @@ export class ParentComponent implements OnInit {
       this.dataLoaded = true;
     }, 2000)
   }
+
+  currentDate = new Date();
+
   ngOnInit() {
   }
 

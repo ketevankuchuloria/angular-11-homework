@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FirstComponent, ParentComponent, SecondComponent } from './parent';
 import { TestingDirective } from './parent/testing.directive';
+import { FileSizePipePipe } from './parent/file-size-pipe.pipe';
 
 
 
@@ -17,6 +18,7 @@ import { TestingDirective } from './parent/testing.directive';
       FirstComponent,
       SecondComponent,
       TestingDirective,
+      FileSizePipePipe
    ],
   imports: [
     BrowserModule,
