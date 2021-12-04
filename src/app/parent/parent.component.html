@@ -3,3 +3,21 @@
 <app-second></app-second>
 
 <button (click)="checkTasks()">checkTasks</button>
+
+
+
+
+<button (click) = "setloading()">Load Data</button>
+
+<!-- <div *ngIf = "loading">
+    Loading...
+</div> -->
+
+<ng-template #loading>
+    <div>Loading...</div>
+</ng-template>
+
+
+<div *ngIf = "!isloading; else loading">
+    Data Is Loaded
+</div>

@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  parentTask: string[] = ['first','second','third']
+  parentTask: string[] = ['first','second','third'];
+
+  isloading = true;
+
+  dataLoaded = false;
 
   constructor() {}
 
@@ -21,6 +25,15 @@ export class ParentComponent implements OnInit {
 
   deleteHandler(task:string){
     this.parentTask = this.parentTask.filter((x) => x !== task)
+  }
+
+  setloading(){
+    this.isloading = true;
+    
+    setTimeout(() => {
+      this.isloading = false;
+      this.dataLoaded = true;
+    }, 2000)
   }
   ngOnInit() {
   }
