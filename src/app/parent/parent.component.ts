@@ -14,6 +14,14 @@ export class ParentComponent implements OnInit {
   checkTasks() {
     console.log(this.parentTask)
   }
+
+  // delete(task:string){
+  //   this.parentTask = this.parentTask.filter((x) => x !== task)
+  // }
+
+  deleteHandler(task:string){
+    this.parentTask = this.parentTask.filter((x) => x !== task)
+  }
   ngOnInit() {
   }
 

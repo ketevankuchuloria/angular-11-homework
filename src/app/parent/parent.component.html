@@ -1,4 +1,5 @@
-<app-first [tasks]= "parentTask"></app-first>
+<!-- <app-first [tasks]= "parentTask"></app-first>  ჩაწოდება -->
+<app-first [tasks]= "parentTask"(delete)= "deleteHandler($event)"></app-first>
 <app-second></app-second>
 
 <button (click)="checkTasks()">checkTasks</button>
